@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B3855331F5CF0D90091704B /* TiempoFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3855321F5CF0D90091704B /* TiempoFacade.swift */; };
+		8B3D8DDB1F3D3C2600ADAEEB /* BandejaTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D8DDA1F3D3C1A00ADAEEB /* BandejaTableView.swift */; };
+		8B503BDA1DEFE78C009C166E /* Mensaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B503BD91DEFE78C009C166E /* Mensaje.swift */; };
+		8B503BDD1DEFE819009C166E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B503BDC1DEFE819009C166E /* libsqlite3.tbd */; };
+		8B5A50491DEFE9EC00395E14 /* Varios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A50481DEFE9EC00395E14 /* Varios.swift */; };
+		8B5A504B1DF0482D00395E14 /* CeldaMensaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A504A1DF0482D00395E14 /* CeldaMensaje.swift */; };
+		8B5A504D1DF049A300395E14 /* MensajeFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A504C1DF049A300395E14 /* MensajeFacade.swift */; };
+		8B5A504F1DF04F4B00395E14 /* NuevoMensaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A504E1DF04F4B00395E14 /* NuevoMensaje.swift */; };
+		8B5A50511DF052C900395E14 /* ViewConfiguracion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A50501DF052C900395E14 /* ViewConfiguracion.swift */; };
+		8B5A50531DF0822800395E14 /* ViewDetalleMensaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A50521DF0822800395E14 /* ViewDetalleMensaje.swift */; };
+		8BD2992C1F3A14F3006205C9 /* Parte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD2992B1F3A14F3006205C9 /* Parte.swift */; };
+		A85AFD4220645B21006C0ABB /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A85AFD3D20645AFD006C0ABB /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A85AFD4320645B6F006C0ABB /* CryptoSwift.xcodeproj in Frameworks */ = {isa = PBXBuildFile; fileRef = A85AFD3720645AFD006C0ABB /* CryptoSwift.xcodeproj */; };
+		A8BBF6D220643EB100CD92EE /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BBF6CE20643EB100CD92EE /* MGSwipeButton.m */; };
+		A8BBF6D320643EB100CD92EE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8BBF6CF20643EB100CD92EE /* Info.plist */; };
+		A8BBF6D420643EB100CD92EE /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BBF6D120643EB100CD92EE /* MGSwipeTableCell.m */; };
+		A8BBF6E220643F4E00CD92EE /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BBF6D820643F4D00CD92EE /* FMDatabasePool.m */; };
+		A8BBF6E320643F4E00CD92EE /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BBF6D920643F4D00CD92EE /* FMDatabase.m */; };
+		A8BBF6E420643F4E00CD92EE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8BBF6DC20643F4E00CD92EE /* Info.plist */; };
+		A8BBF6E520643F4E00CD92EE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BBF6DD20643F4E00CD92EE /* FMDatabaseAdditions.m */; };
+		A8BBF6E620643F4E00CD92EE /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BBF6DE20643F4E00CD92EE /* FMDatabaseQueue.m */; };
+		A8BBF6E720643F4E00CD92EE /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BBF6E020643F4E00CD92EE /* FMResultSet.m */; };
+		C043655F1A626BA0000E0F15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043655E1A626BA0000E0F15 /* AppDelegate.swift */; };
+		C04365611A626BA0000E0F15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04365601A626BA0000E0F15 /* ViewController.swift */; };
+		C04365641A626BA0000E0F15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C04365621A626BA0000E0F15 /* Main.storyboard */; };
+		C04365661A626BA0000E0F15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C04365651A626BA0000E0F15 /* Images.xcassets */; };
+		C04365691A626BA0000E0F15 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C04365671A626BA0000E0F15 /* LaunchScreen.xib */; };
+		C04365751A626BA1000E0F15 /* MPCRevisitedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04365741A626BA1000E0F15 /* MPCRevisitedTests.swift */; };
+		C04365831A627A8C000E0F15 /* MPCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04365821A627A8C000E0F15 /* MPCManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B6DC2A41FAB56D5008A4C84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B6DC29F1FAB56D5008A4C84 /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE45519693E190098E6F3;
+			remoteInfo = CryptoSwift;
+		};
+		8B6DC2A61FAB56D5008A4C84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B6DC29F1FAB56D5008A4C84 /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE46019693E190098E6F3;
+			remoteInfo = Tests;
+		};
+		8B6DC2AF1FAB5783008A4C84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B6DC29F1FAB56D5008A4C84 /* CryptoSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 754BE45419693E190098E6F3;
+			remoteInfo = CryptoSwift;
+		};
+		A85AFD3C20645AFD006C0ABB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A85AFD3720645AFD006C0ABB /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE45519693E190098E6F3;
+			remoteInfo = CryptoSwift;
+		};
+		A85AFD3E20645AFD006C0ABB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A85AFD3720645AFD006C0ABB /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE46019693E190098E6F3;
+			remoteInfo = Tests;
+		};
+		A85AFD4020645B04006C0ABB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A85AFD3720645AFD006C0ABB /* CryptoSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 754BE45419693E190098E6F3;
+			remoteInfo = CryptoSwift;
+		};
+		C043656F1A626BA1000E0F15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C04365511A626BA0000E0F15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C04365581A626BA0000E0F15;
+			remoteInfo = MPCRevisited;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B6DC2B11FAB5784008A4C84 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A85AFD4220645B21006C0ABB /* CryptoSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8B3855321F5CF0D90091704B /* TiempoFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiempoFacade.swift; sourceTree = "<group>"; };
+		8B3D8DDA1F3D3C1A00ADAEEB /* BandejaTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandejaTableView.swift; sourceTree = "<group>"; };
+		8B503BD91DEFE78C009C166E /* Mensaje.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mensaje.swift; sourceTree = "<group>"; };
+		8B503BDC1DEFE819009C166E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		8B5A502B1DEFE94800395E14 /* MPCRevisited-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MPCRevisited-Bridging-Header.h"; sourceTree = "<group>"; };
+		8B5A50481DEFE9EC00395E14 /* Varios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Varios.swift; sourceTree = "<group>"; };
+		8B5A504A1DF0482D00395E14 /* CeldaMensaje.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CeldaMensaje.swift; sourceTree = "<group>"; };
+		8B5A504C1DF049A300395E14 /* MensajeFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MensajeFacade.swift; sourceTree = "<group>"; };
+		8B5A504E1DF04F4B00395E14 /* NuevoMensaje.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuevoMensaje.swift; sourceTree = "<group>"; };
+		8B5A50501DF052C900395E14 /* ViewConfiguracion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConfiguracion.swift; sourceTree = "<group>"; };
+		8B5A50521DF0822800395E14 /* ViewDetalleMensaje.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDetalleMensaje.swift; sourceTree = "<group>"; };
+		8B6DC29F1FAB56D5008A4C84 /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = "../CryptoSwift-master 2/CryptoSwift.xcodeproj"; sourceTree = "<group>"; };
+		8BD2992B1F3A14F3006205C9 /* Parte.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parte.swift; sourceTree = "<group>"; };
+		A85AFD3720645AFD006C0ABB /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = "CryptoSwift-master/CryptoSwift.xcodeproj"; sourceTree = "<group>"; };
+		A8BBF6CD20643EB100CD92EE /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGSwipeTableCell.h; path = Cells/MGSwipeTableCell.h; sourceTree = SOURCE_ROOT; };
+		A8BBF6CE20643EB100CD92EE /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGSwipeButton.m; path = Cells/MGSwipeButton.m; sourceTree = SOURCE_ROOT; };
+		A8BBF6CF20643EB100CD92EE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Cells/Info.plist; sourceTree = SOURCE_ROOT; };
+		A8BBF6D020643EB100CD92EE /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGSwipeButton.h; path = Cells/MGSwipeButton.h; sourceTree = SOURCE_ROOT; };
+		A8BBF6D120643EB100CD92EE /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGSwipeTableCell.m; path = Cells/MGSwipeTableCell.m; sourceTree = SOURCE_ROOT; };
+		A8BBF6D620643F4D00CD92EE /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = fmdb/FMDatabase.h; sourceTree = SOURCE_ROOT; };
+		A8BBF6D720643F4D00CD92EE /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = fmdb/FMDatabasePool.h; sourceTree = SOURCE_ROOT; };
+		A8BBF6D820643F4D00CD92EE /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = fmdb/FMDatabasePool.m; sourceTree = SOURCE_ROOT; };
+		A8BBF6D920643F4D00CD92EE /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = fmdb/FMDatabase.m; sourceTree = SOURCE_ROOT; };
+		A8BBF6DA20643F4E00CD92EE /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = fmdb/FMResultSet.h; sourceTree = SOURCE_ROOT; };
+		A8BBF6DB20643F4E00CD92EE /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = fmdb/FMDatabaseQueue.h; sourceTree = SOURCE_ROOT; };
+		A8BBF6DC20643F4E00CD92EE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = fmdb/Info.plist; sourceTree = SOURCE_ROOT; };
+		A8BBF6DD20643F4E00CD92EE /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = fmdb/FMDatabaseAdditions.m; sourceTree = SOURCE_ROOT; };
+		A8BBF6DE20643F4E00CD92EE /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = fmdb/FMDatabaseQueue.m; sourceTree = SOURCE_ROOT; };
+		A8BBF6DF20643F4E00CD92EE /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = fmdb/FMDB.h; sourceTree = SOURCE_ROOT; };
+		A8BBF6E020643F4E00CD92EE /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = fmdb/FMResultSet.m; sourceTree = SOURCE_ROOT; };
+		A8BBF6E120643F4E00CD92EE /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = fmdb/FMDatabaseAdditions.h; sourceTree = SOURCE_ROOT; };
+		C04365591A626BA0000E0F15 /* TesisBoris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesisBoris.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C043655D1A626BA0000E0F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C043655E1A626BA0000E0F15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C04365601A626BA0000E0F15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C04365631A626BA0000E0F15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C04365651A626BA0000E0F15 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C04365681A626BA0000E0F15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C043656E1A626BA1000E0F15 /* TesisBorisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TesisBorisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C04365731A626BA1000E0F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C04365741A626BA1000E0F15 /* MPCRevisitedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCRevisitedTests.swift; sourceTree = "<group>"; };
+		C04365821A627A8C000E0F15 /* MPCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPCManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C04365561A626BA0000E0F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A85AFD4320645B6F006C0ABB /* CryptoSwift.xcodeproj in Frameworks */,
+				8B503BDD1DEFE819009C166E /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C043656B1A626BA1000E0F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B503BD41DEFCD9F009C166E /* Mis Cosas */ = {
+			isa = PBXGroup;
+			children = (
+				8B3D8DDA1F3D3C1A00ADAEEB /* BandejaTableView.swift */,
+				8B503BD91DEFE78C009C166E /* Mensaje.swift */,
+				8B5A50481DEFE9EC00395E14 /* Varios.swift */,
+				8B5A504A1DF0482D00395E14 /* CeldaMensaje.swift */,
+				8B5A504C1DF049A300395E14 /* MensajeFacade.swift */,
+				8B5A504E1DF04F4B00395E14 /* NuevoMensaje.swift */,
+				8B5A50501DF052C900395E14 /* ViewConfiguracion.swift */,
+				8B5A50521DF0822800395E14 /* ViewDetalleMensaje.swift */,
+				8BD2992B1F3A14F3006205C9 /* Parte.swift */,
+				8B3855321F5CF0D90091704B /* TiempoFacade.swift */,
+			);
+			name = "Mis Cosas";
+			sourceTree = "<group>";
+		};
+		8B503BDB1DEFE818009C166E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B6DC29F1FAB56D5008A4C84 /* CryptoSwift.xcodeproj */,
+				8B503BDC1DEFE819009C166E /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B6DC2A01FAB56D5008A4C84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B6DC2A51FAB56D5008A4C84 /* CryptoSwift.framework */,
+				8B6DC2A71FAB56D5008A4C84 /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A85AFD3820645AFD006C0ABB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A85AFD3D20645AFD006C0ABB /* CryptoSwift.framework */,
+				A85AFD3F20645AFD006C0ABB /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8BBF6CC20643E9300CD92EE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A8BBF6CF20643EB100CD92EE /* Info.plist */,
+				A8BBF6D020643EB100CD92EE /* MGSwipeButton.h */,
+				A8BBF6CE20643EB100CD92EE /* MGSwipeButton.m */,
+				A8BBF6CD20643EB100CD92EE /* MGSwipeTableCell.h */,
+				A8BBF6D120643EB100CD92EE /* MGSwipeTableCell.m */,
+			);
+			name = Cells;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A8BBF6D520643F2800CD92EE /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				A8BBF6D620643F4D00CD92EE /* FMDatabase.h */,
+				A8BBF6D920643F4D00CD92EE /* FMDatabase.m */,
+				A8BBF6E120643F4E00CD92EE /* FMDatabaseAdditions.h */,
+				A8BBF6DD20643F4E00CD92EE /* FMDatabaseAdditions.m */,
+				A8BBF6D720643F4D00CD92EE /* FMDatabasePool.h */,
+				A8BBF6D820643F4D00CD92EE /* FMDatabasePool.m */,
+				A8BBF6DB20643F4E00CD92EE /* FMDatabaseQueue.h */,
+				A8BBF6DE20643F4E00CD92EE /* FMDatabaseQueue.m */,
+				A8BBF6DF20643F4E00CD92EE /* FMDB.h */,
+				A8BBF6DA20643F4E00CD92EE /* FMResultSet.h */,
+				A8BBF6E020643F4E00CD92EE /* FMResultSet.m */,
+				A8BBF6DC20643F4E00CD92EE /* Info.plist */,
+			);
+			name = fmdb;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		C04365501A626BA0000E0F15 = {
+			isa = PBXGroup;
+			children = (
+				A8BBF6D520643F2800CD92EE /* fmdb */,
+				A8BBF6CC20643E9300CD92EE /* Cells */,
+				C043655B1A626BA0000E0F15 /* TesisBoris */,
+				C04365711A626BA1000E0F15 /* TesisBorisTests */,
+				C043655A1A626BA0000E0F15 /* Products */,
+				8B503BDB1DEFE818009C166E /* Frameworks */,
+				8B5A502B1DEFE94800395E14 /* MPCRevisited-Bridging-Header.h */,
+				A85AFD3720645AFD006C0ABB /* CryptoSwift.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		C043655A1A626BA0000E0F15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C04365591A626BA0000E0F15 /* TesisBoris.app */,
+				C043656E1A626BA1000E0F15 /* TesisBorisTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C043655B1A626BA0000E0F15 /* TesisBoris */ = {
+			isa = PBXGroup;
+			children = (
+				8B503BD41DEFCD9F009C166E /* Mis Cosas */,
+				C043655E1A626BA0000E0F15 /* AppDelegate.swift */,
+				C04365601A626BA0000E0F15 /* ViewController.swift */,
+				C04365821A627A8C000E0F15 /* MPCManager.swift */,
+				C04365621A626BA0000E0F15 /* Main.storyboard */,
+				C04365651A626BA0000E0F15 /* Images.xcassets */,
+				C04365671A626BA0000E0F15 /* LaunchScreen.xib */,
+				C043655C1A626BA0000E0F15 /* Supporting Files */,
+			);
+			path = TesisBoris;
+			sourceTree = "<group>";
+		};
+		C043655C1A626BA0000E0F15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C043655D1A626BA0000E0F15 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C04365711A626BA1000E0F15 /* TesisBorisTests */ = {
+			isa = PBXGroup;
+			children = (
+				C04365741A626BA1000E0F15 /* MPCRevisitedTests.swift */,
+				C04365721A626BA1000E0F15 /* Supporting Files */,
+			);
+			path = TesisBorisTests;
+			sourceTree = "<group>";
+		};
+		C04365721A626BA1000E0F15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C04365731A626BA1000E0F15 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C04365581A626BA0000E0F15 /* TesisBoris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C04365781A626BA1000E0F15 /* Build configuration list for PBXNativeTarget "TesisBoris" */;
+			buildPhases = (
+				C04365551A626BA0000E0F15 /* Sources */,
+				C04365561A626BA0000E0F15 /* Frameworks */,
+				C04365571A626BA0000E0F15 /* Resources */,
+				8B6DC2B11FAB5784008A4C84 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A85AFD4120645B04006C0ABB /* PBXTargetDependency */,
+				8B6DC2B01FAB5783008A4C84 /* PBXTargetDependency */,
+			);
+			name = TesisBoris;
+			productName = MPCRevisited;
+			productReference = C04365591A626BA0000E0F15 /* TesisBoris.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C043656D1A626BA1000E0F15 /* TesisBorisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C043657B1A626BA1000E0F15 /* Build configuration list for PBXNativeTarget "TesisBorisTests" */;
+			buildPhases = (
+				C043656A1A626BA1000E0F15 /* Sources */,
+				C043656B1A626BA1000E0F15 /* Frameworks */,
+				C043656C1A626BA1000E0F15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C04365701A626BA1000E0F15 /* PBXTargetDependency */,
+			);
+			name = TesisBorisTests;
+			productName = MPCRevisitedTests;
+			productReference = C043656E1A626BA1000E0F15 /* TesisBorisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C04365511A626BA0000E0F15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Appcoda;
+				TargetAttributes = {
+					C04365581A626BA0000E0F15 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 4FTV6Y69ES;
+						LastSwiftMigration = 0900;
+					};
+					C043656D1A626BA1000E0F15 = {
+						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0900;
+						TestTargetID = C04365581A626BA0000E0F15;
+					};
+				};
+			};
+			buildConfigurationList = C04365541A626BA0000E0F15 /* Build configuration list for PBXProject "TesisBoris" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C04365501A626BA0000E0F15;
+			productRefGroup = C043655A1A626BA0000E0F15 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8B6DC2A01FAB56D5008A4C84 /* Products */;
+					ProjectRef = 8B6DC29F1FAB56D5008A4C84 /* CryptoSwift.xcodeproj */;
+				},
+				{
+					ProductGroup = A85AFD3820645AFD006C0ABB /* Products */;
+					ProjectRef = A85AFD3720645AFD006C0ABB /* CryptoSwift.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C04365581A626BA0000E0F15 /* TesisBoris */,
+				C043656D1A626BA1000E0F15 /* TesisBorisTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8B6DC2A51FAB56D5008A4C84 /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = 8B6DC2A41FAB56D5008A4C84 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8B6DC2A71FAB56D5008A4C84 /* Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.xctest;
+			remoteRef = 8B6DC2A61FAB56D5008A4C84 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A85AFD3D20645AFD006C0ABB /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = A85AFD3C20645AFD006C0ABB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A85AFD3F20645AFD006C0ABB /* Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.xctest;
+			remoteRef = A85AFD3E20645AFD006C0ABB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C04365571A626BA0000E0F15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C04365641A626BA0000E0F15 /* Main.storyboard in Resources */,
+				C04365691A626BA0000E0F15 /* LaunchScreen.xib in Resources */,
+				A8BBF6D320643EB100CD92EE /* Info.plist in Resources */,
+				A8BBF6E420643F4E00CD92EE /* Info.plist in Resources */,
+				C04365661A626BA0000E0F15 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C043656C1A626BA1000E0F15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C04365551A626BA0000E0F15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C04365611A626BA0000E0F15 /* ViewController.swift in Sources */,
+				8B5A50491DEFE9EC00395E14 /* Varios.swift in Sources */,
+				A8BBF6E220643F4E00CD92EE /* FMDatabasePool.m in Sources */,
+				A8BBF6E320643F4E00CD92EE /* FMDatabase.m in Sources */,
+				A8BBF6D220643EB100CD92EE /* MGSwipeButton.m in Sources */,
+				A8BBF6E520643F4E00CD92EE /* FMDatabaseAdditions.m in Sources */,
+				8BD2992C1F3A14F3006205C9 /* Parte.swift in Sources */,
+				A8BBF6D420643EB100CD92EE /* MGSwipeTableCell.m in Sources */,
+				8B5A50531DF0822800395E14 /* ViewDetalleMensaje.swift in Sources */,
+				8B5A50511DF052C900395E14 /* ViewConfiguracion.swift in Sources */,
+				8B5A504F1DF04F4B00395E14 /* NuevoMensaje.swift in Sources */,
+				8B5A504D1DF049A300395E14 /* MensajeFacade.swift in Sources */,
+				8B5A504B1DF0482D00395E14 /* CeldaMensaje.swift in Sources */,
+				8B503BDA1DEFE78C009C166E /* Mensaje.swift in Sources */,
+				C04365831A627A8C000E0F15 /* MPCManager.swift in Sources */,
+				A8BBF6E720643F4E00CD92EE /* FMResultSet.m in Sources */,
+				8B3D8DDB1F3D3C2600ADAEEB /* BandejaTableView.swift in Sources */,
+				8B3855331F5CF0D90091704B /* TiempoFacade.swift in Sources */,
+				A8BBF6E620643F4E00CD92EE /* FMDatabaseQueue.m in Sources */,
+				C043655F1A626BA0000E0F15 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C043656A1A626BA1000E0F15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C04365751A626BA1000E0F15 /* MPCRevisitedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B6DC2B01FAB5783008A4C84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoSwift;
+			targetProxy = 8B6DC2AF1FAB5783008A4C84 /* PBXContainerItemProxy */;
+		};
+		A85AFD4120645B04006C0ABB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoSwift;
+			targetProxy = A85AFD4020645B04006C0ABB /* PBXContainerItemProxy */;
+		};
+		C04365701A626BA1000E0F15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C04365581A626BA0000E0F15 /* TesisBoris */;
+			targetProxy = C043656F1A626BA1000E0F15 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C04365621A626BA0000E0F15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C04365631A626BA0000E0F15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C04365671A626BA0000E0F15 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C04365681A626BA0000E0F15 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C04365761A626BA1000E0F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C04365771A626BA1000E0F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C04365791A626BA1000E0F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 4FTV6Y69ES;
+				INFOPLIST_FILE = "$(SRCROOT)/CryptoSwift-master/Tests/CryptoSwiftTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tesis.boris.cl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MPCRevisited-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		C043657A1A626BA1000E0F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 4FTV6Y69ES;
+				INFOPLIST_FILE = "$(SRCROOT)/CryptoSwift-master/Tests/CryptoSwiftTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tesis.boris.cl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MPCRevisited-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		C043657C1A626BA1000E0F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MPCRevisitedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TesisBoris.app/TesisBoris";
+			};
+			name = Debug;
+		};
+		C043657D1A626BA1000E0F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MPCRevisitedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TesisBoris.app/TesisBoris";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C04365541A626BA0000E0F15 /* Build configuration list for PBXProject "TesisBoris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C04365761A626BA1000E0F15 /* Debug */,
+				C04365771A626BA1000E0F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C04365781A626BA1000E0F15 /* Build configuration list for PBXNativeTarget "TesisBoris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C04365791A626BA1000E0F15 /* Debug */,
+				C043657A1A626BA1000E0F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C043657B1A626BA1000E0F15 /* Build configuration list for PBXNativeTarget "TesisBorisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C043657C1A626BA1000E0F15 /* Debug */,
+				C043657D1A626BA1000E0F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C04365511A626BA0000E0F15 /* Project object */;
+}
